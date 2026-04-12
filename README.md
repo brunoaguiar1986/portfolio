@@ -3,7 +3,7 @@
 Portfólio pessoal redesenhado com tema dark moderno, animações e responsividade total.
 
 ## 🚀 Acesse online
-https://brunoaguiar1986.github.io/portifolio/
+https://brunoaguiar1986.github.io/portfolio/
 
 ## ✨ Melhorias implementadas
 
