@@ -519,6 +519,30 @@ body:has(a:hover, button:hover) .cursor-follower { width: 48px; height: 48px; bo
   color: var(--accent);
 }
 
+/* --- PROJECT PLACEHOLDER (replaces broken imgs) --- */
+.project-placeholder {
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: radial-gradient(ellipse at 60% 40%, color-mix(in srgb, var(--ph-color, #00ff88) 12%, transparent), var(--surface2) 70%);
+  border-bottom: 2px solid color-mix(in srgb, var(--ph-color, #00ff88) 40%, transparent);
+  transition: transform 0.4s ease;
+}
+.project-card:hover .project-placeholder { transform: scale(1.04); }
+.ph-icon { font-size: 3rem; filter: drop-shadow(0 0 12px var(--ph-color, #00ff88)); }
+.ph-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ph-color, #00ff88);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* --- WIP --- */
 .wip-placeholder {
   height: 100%;
   background: repeating-linear-gradient(
@@ -536,6 +560,11 @@ body:has(a:hover, button:hover) .cursor-follower { width: 48px; height: 48px; bo
   font-size: 0.9rem;
 }
 .wip-icon { font-size: 2.5rem; }
+.wip-blink {
+  color: var(--accent);
+  font-size: 1.2rem;
+  animation: blink 1s infinite;
+}
 
 /* --- SKILLS --- */
 .skills-categories { display: flex; flex-direction: column; gap: 2.5rem; }
@@ -593,6 +622,100 @@ body:has(a:hover, button:hover) .cursor-follower { width: 48px; height: 48px; bo
   text-align: center;
   white-space: nowrap;
 }
+
+/* --- SECTION SUB --- */
+.section-sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+  font-family: var(--font-mono);
+}
+
+/* ═══════════════════════════════════════════
+   FERRAMENTAS
+   ═══════════════════════════════════════════ */
+.tools-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tools-group {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem 2rem;
+  transition: border-color var(--transition);
+}
+.tools-group:hover { border-color: rgba(0,255,136,0.3); }
+
+.tools-group-title {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.tools-group-icon { font-size: 1.1rem; }
+
+.tools-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+  min-width: 76px;
+  cursor: default;
+}
+.tool-item:hover {
+  border-color: var(--accent);
+  background: rgba(0,255,136,0.05);
+  transform: translateY(-4px);
+  box-shadow: var(--glow);
+}
+.tool-item img {
+  width: 34px; height: 34px;
+  object-fit: contain;
+}
+.tool-item span {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-align: center;
+  white-space: nowrap;
+}
+.tool-item:hover span { color: var(--accent); }
+
+/* Text/icon fallback for tools without SVG */
+.tool-text-icon {
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+
+/* Invert dark icons (GitHub, Expo) so they show on dark bg */
+.icon-invert { filter: invert(1) brightness(0.85); }
 
 /* --- CONTATO --- */
 .contato-grid {
@@ -797,4 +920,7 @@ body:has(a:hover, button:hover) .cursor-follower { width: 48px; height: 48px; bo
   .btn { width: 100%; justify-content: center; }
   .contato-form { padding: 1.5rem; }
   .skill-category { padding: 1.5rem; }
+  .tools-group { padding: 1.4rem; }
+  .tool-item { min-width: 66px; padding: 0.75rem 0.8rem; }
+  .tools-row { gap: 0.6rem; }
 }

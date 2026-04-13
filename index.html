@@ -3,19 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bruno Aguiar | Desenvolvedor</title>
+  <title>Bruno Aguiar | Desenvolvedor Full Stack</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- MATRIX CANVAS -->
   <canvas id="matrix-canvas"></canvas>
-
-  <!-- CURSOR -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursorFollower"></div>
 
@@ -26,14 +22,15 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#sobre" class="nav-link">Sobre</a></li>
-      <li><a href="#projetos" class="nav-link">Projetos</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#contato" class="nav-link">Contato</a></li>
+      <li><a href="#sobre"       class="nav-link">Sobre</a></li>
+      <li><a href="#projetos"    class="nav-link">Projetos</a></li>
+      <li><a href="#skills"      class="nav-link">Skills</a></li>
+      <li><a href="#ferramentas" class="nav-link">Ferramentas</a></li>
+      <li><a href="#contato"     class="nav-link">Contato</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
+  <!-- ══ HERO ══ -->
   <section class="hero" id="home">
     <div class="hero-content">
       <p class="hero-greeting">Olá, meu nome é</p>
@@ -45,9 +42,7 @@
         <span class="role-tag">Professor de TI</span>
         <span class="role-tag">Programador</span>
       </div>
-      <p class="hero-desc">
-        Transformando ideias em código. Apaixonado por tecnologia, ensino e soluções criativas.
-      </p>
+      <p class="hero-desc">Transformando ideias em código. Apaixonado por tecnologia, ensino e soluções criativas.</p>
       <div class="hero-btns">
         <a href="#contato" class="btn btn-primary">Entre em contato</a>
         <a href="assets/curriculo_bruno_aguiar_2022.pdf" class="btn btn-outline" download>↓ CV Download</a>
@@ -55,7 +50,7 @@
       <div class="hero-stats">
         <div class="stat"><span class="stat-num">39</span><span class="stat-label">Anos</span></div>
         <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Tecnologias</span></div>
+        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Tecnologias</span></div>
         <div class="stat-divider"></div>
         <div class="stat"><span class="stat-num">N3</span><span class="stat-label">Support Level</span></div>
       </div>
@@ -63,9 +58,7 @@
     <div class="hero-visual">
       <div class="code-window">
         <div class="code-header">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
           <span class="code-title">portfolio.js</span>
         </div>
         <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">dev</span> = {
@@ -84,13 +77,10 @@
 };</code></pre>
       </div>
     </div>
-    <a href="#sobre" class="scroll-down">
-      <span>Rolar</span>
-      <div class="scroll-arrow"></div>
-    </a>
+    <a href="#sobre" class="scroll-down"><span>Rolar</span><div class="scroll-arrow"></div></a>
   </section>
 
-  <!-- SOBRE -->
+  <!-- ══ SOBRE ══ -->
   <section class="section" id="sobre">
     <div class="container">
       <div class="section-header">
@@ -101,23 +91,23 @@
         <div class="sobre-card">
           <div class="sobre-icon">🎓</div>
           <h3>Instrutor e Professor de TI</h3>
-          <p>Compartilho conhecimento e experiência ensinando tecnologia de forma prática e objetiva.</p>
+          <p>Compartilho conhecimento ensinando tecnologia de forma prática e objetiva, formando novos profissionais para o mercado.</p>
         </div>
         <div class="sobre-card">
           <div class="sobre-icon">⚙️</div>
           <h3>Support Analyst N3</h3>
-          <p>Analisto e resolvo problemas complexos de infraestrutura e sistemas em alto nível.</p>
+          <p>Analiso e resolvo problemas complexos de infraestrutura, redes e sistemas em alto nível, garantindo continuidade dos serviços.</p>
         </div>
         <div class="sobre-card">
           <div class="sobre-icon">💻</div>
           <h3>Desenvolvedor</h3>
-          <p>Crio aplicações web e mobile modernas com foco em performance e experiência do usuário.</p>
+          <p>Crio aplicações web e mobile modernas com foco em performance, usabilidade e boas práticas de desenvolvimento.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJETOS -->
+  <!-- ══ PROJETOS ══ -->
   <section class="section section-dark" id="projetos">
     <div class="container">
       <div class="section-header">
@@ -128,98 +118,175 @@
 
         <div class="project-card">
           <div class="project-img-wrapper">
-            <img src="assets/img/sistema_ponto.PNG" alt="Sistema de Ponto" loading="lazy" onerror="this.src='https://via.placeholder.com/400x220/0a0a0a/00ff88?text=Sistema+de+Ponto'">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://brunoaguiar1986.github.io/sistema_ponto_login" target="_blank" class="project-link">↗ Demo</a>
-                <a href="https://github.com/brunoaguiar1986/sistema_ponto_login" target="_blank" class="project-link">⌥ GitHub</a>
-              </div>
-            </div>
+            <div class="project-placeholder" style="--ph-color:#00ff88"><span class="ph-icon">💬</span><span class="ph-label">WhatsApp Clone</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://whats-g6se.onrender.com/" target="_blank" class="project-link">↗ Demo</a>
+              <a href="https://github.com/brunoaguiar1986/whats" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
           </div>
           <div class="project-info">
             <div class="project-num">01</div>
-            <h3 class="project-title">Sistema de Ponto & Login</h3>
-            <p class="project-desc">Sistema de ponto eletrônico completo com autenticação de usuários.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
+            <h3 class="project-title">Chat Instantâneo — Whats</h3>
+            <p class="project-desc">Mensagens em tempo real inspirado no WhatsApp. Comunicação ao vivo entre usuários via Socket.io, containerizado com Docker e hospedado no Render.</p>
+            <div class="project-tags"><span>Node.js</span><span>Socket.io</span><span>HTML</span><span>Docker</span></div>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-img-wrapper">
-            <img src="assets/img/print_game_mario.png" alt="Super Mario Jump" loading="lazy" onerror="this.src='https://via.placeholder.com/400x220/0a0a0a/00ff88?text=Super+Mario+Jump'">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://brunoaguiar1986.github.io/mario/" target="_blank" class="project-link">↗ Demo</a>
-                <a href="https://github.com/brunoaguiar1986/mario" target="_blank" class="project-link">⌥ GitHub</a>
-              </div>
-            </div>
+            <div class="project-placeholder" style="--ph-color:#00ccff"><span class="ph-icon">💵</span><span class="ph-label">Cotação do Dólar</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://brunoaguiar1986.github.io/cotacaoDolar/" target="_blank" class="project-link">↗ Demo</a>
+              <a href="https://github.com/brunoaguiar1986/cotacaoDolar" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
           </div>
           <div class="project-info">
             <div class="project-num">02</div>
-            <h3 class="project-title">Super Mario Jump</h3>
-            <p class="project-desc">Jogo inspirado no clássico Mario com obstáculos e pontuação em JavaScript puro.</p>
-            <div class="project-tags">
-              <span>JavaScript</span><span>Canvas</span><span>CSS</span>
-            </div>
+            <h3 class="project-title">Cotação do Dólar</h3>
+            <p class="project-desc">Consulta em tempo real da cotação do Dólar via API de câmbio externa. Demonstra consumo de APIs REST com JavaScript puro — desenvolvido em aula.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API REST</span></div>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-img-wrapper">
-            <img src="assets/img/iphone.PNG" alt="Calculadora iPhone" loading="lazy" onerror="this.src='https://via.placeholder.com/400x220/0a0a0a/00ff88?text=Calculadora+iPhone'">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://brunoaguiar1986.github.io/calculadora_iphone" target="_blank" class="project-link">↗ Demo</a>
-                <a href="https://github.com/brunoaguiar1986/calculadora_iphone" target="_blank" class="project-link">⌥ GitHub</a>
-              </div>
-            </div>
+            <div class="project-placeholder" style="--ph-color:#61dafb"><span class="ph-icon">⚛️</span><span class="ph-label">Dragon Ball 🐉 em React</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://site-react-nu.vercel.app/" target="_blank" class="project-link">↗ Demo</a>
+              <a href="https://github.com/brunoaguiar1986/siteReact" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
           </div>
           <div class="project-info">
             <div class="project-num">03</div>
-            <h3 class="project-title">Calculadora iPhone</h3>
-            <p class="project-desc">Réplica fiel da calculadora do iPhone com todas as operações funcionais.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
+            <h3 class="project-title">Site Dragon Ball em React</h3>
+            <p class="project-desc">Site com React.js, componentização modular e deploy automatizado no Vercel. Boas práticas de estrutura de projeto React - Tema Dragon Ball</p>
+            <div class="project-tags"><span>React</span><span>JavaScript</span><span>CSS</span><span>Vercel</span></div>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-img-wrapper">
-            <img src="assets/img/imc.PNG" alt="Calculadora IMC" loading="lazy" onerror="this.src='https://via.placeholder.com/400x220/0a0a0a/00ff88?text=Calculadora+IMC'">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://brunoaguiar1986.github.io/imc/" target="_blank" class="project-link">↗ Demo</a>
-                <a href="https://github.com/brunoaguiar1986/imc" target="_blank" class="project-link">⌥ GitHub</a>
-              </div>
-            </div>
+            <div class="project-placeholder" style="--ph-color:#ff3d71"><span class="ph-icon">🔴⚪⚫</span><span class="ph-label">Tricolor - SPFC</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://github.com/brunoaguiar1986/tricolor" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
           </div>
           <div class="project-info">
             <div class="project-num">04</div>
-            <h3 class="project-title">Calculadora IMC</h3>
-            <p class="project-desc">Calcule seu Índice de Massa Corporal com interface limpa e feedback visual.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
+            <h3 class="project-title">Tricolor — Manipulação RGB</h3>
+            <p class="project-desc">Projeto sobre o time do SPFC.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
           </div>
         </div>
 
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder" style="--ph-color:#f2cc60"><span class="ph-icon">🌐</span><span class="ph-label">Tour 360°</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://github.com/brunoaguiar1986/Tour360" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">05</div>
+            <h3 class="project-title">Tour360 — Tour Virtual</h3>
+            <p class="project-desc">Experiência de tour virtual 360° no browser com navegação imersiva e visualização panorâmica interativa em ambientes reais.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>360°</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder" style="--ph-color:#b388ff"><span class="ph-icon">✅</span><span class="ph-label">Kanban</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://github.com/brunoaguiar1986/to-do-list-kanban" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">06</div>
+            <h3 class="project-title">To-Do List Kanban</h3>
+            <p class="project-desc">Gerenciador de tarefas estilo Kanban com drag &amp; drop, colunas dinâmicas e persistência local. Demonstra fluxo de trabalho ágil no frontend.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Kanban</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder" style="--ph-color:#00ff88"><span class="ph-icon">🖥️</span><span class="ph-label">Sistema de Ponto</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://brunoaguiar1986.github.io/sistema_ponto_login" target="_blank" class="project-link">↗ Demo</a>
+              <a href="https://github.com/brunoaguiar1986/sistema_ponto_login" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">07</div>
+            <h3 class="project-title">Sistema de Ponto &amp; Login</h3>
+            <p class="project-desc">Sistema de ponto eletrônico completo com tela de autenticação de usuários e registro de horários de entrada e saída.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder" style="--ph-color:#00ccff"><span class="ph-icon">🍄</span><span class="ph-label">Super Mario Jump</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://brunoaguiar1986.github.io/mario/" target="_blank" class="project-link">↗ Demo</a>
+              <a href="https://github.com/brunoaguiar1986/mario" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">08</div>
+            <h3 class="project-title">Super Mario Jump</h3>
+            <p class="project-desc">Jogo inspirado no clássico Mario com obstáculos e pontuação, desenvolvido com JavaScript puro e Canvas API do browser.</p>
+            <div class="project-tags"><span>JavaScript</span><span>Canvas</span><span>CSS</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder" style="--ph-color:#e8e8e8"><span class="ph-icon">📱</span><span class="ph-label">Calculadora iPhone</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://brunoaguiar1986.github.io/calculadora_iphone" target="_blank" class="project-link">↗ Demo</a>
+              <a href="https://github.com/brunoaguiar1986/calculadora_iphone" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">09</div>
+            <h3 class="project-title">Calculadora iPhone</h3>
+            <p class="project-desc">Réplica fiel da calculadora do iPhone com todas as operações matemáticas funcionais e design pixel-perfect.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder" style="--ph-color:#00ff88"><span class="ph-icon">⚖️</span><span class="ph-label">IMC</span></div>
+            <div class="project-overlay"><div class="project-links">
+              <a href="https://brunoaguiar1986.github.io/imc/" target="_blank" class="project-link">↗ Demo</a>
+              <a href="https://github.com/brunoaguiar1986/imc" target="_blank" class="project-link">⌥ GitHub</a>
+            </div></div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">10</div>
+            <h3 class="project-title">Calculadora de IMC</h3>
+            <p class="project-desc">Calcule seu Índice de Massa Corporal com interface limpa, feedback visual e resultado categorizado por faixa de saúde.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </div>
+
+        <!-- Em construção — sempre o último -->
         <div class="project-card project-wip">
           <div class="project-img-wrapper">
             <div class="wip-placeholder">
               <div class="wip-icon">⚡</div>
               <p>Em Construção</p>
+              <span class="wip-blink">█</span>
             </div>
           </div>
           <div class="project-info">
-            <div class="project-num">05</div>
+            <div class="project-num">11</div>
             <h3 class="project-title">Novo Projeto — Em Breve</h3>
-            <p class="project-desc">Algo novo está a caminho. Fique de olho!</p>
-            <div class="project-tags">
-              <span>Em breve</span>
-            </div>
+            <p class="project-desc">Algo novo está sendo construído. Fique de olho, em breve por aqui! 👀</p>
+            <div class="project-tags"><span>Em breve</span></div>
           </div>
         </div>
 
@@ -227,105 +294,132 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ══ SKILLS ══ -->
   <section class="section" id="skills">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">// conhecimentos</span>
         <h2 class="section-title">Minhas <span class="accent">Skills</span></h2>
       </div>
-
       <div class="skills-categories">
 
         <div class="skill-category">
           <h3 class="category-title"><span class="accent">//</span> Frontend</h3>
           <div class="skills-row">
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/html-5.png" alt="HTML5" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🌐</span>
-              <span>HTML5</span>
-            </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/css-3.png" alt="CSS3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🎨</span>
-              <span>CSS3</span>
-            </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/js.png" alt="JavaScript" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">⚡</span>
-              <span>JavaScript</span>
-            </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/icons8-nativo-de-reagir-48.png" alt="React" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">⚛️</span>
-              <span>React JS</span>
-            </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/angular.png" alt="Angular" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🔴</span>
-              <span>Angular</span>
-            </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/ionic.png" alt="Ionic" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">💙</span>
-              <span>Ionic</span>
-            </div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React JS</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"><span>Angular</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" alt="Ionic"><span>Ionic</span></div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="category-title"><span class="accent">//</span> Backend & Mobile</h3>
+          <h3 class="category-title"><span class="accent">//</span> Backend &amp; Mobile</h3>
           <div class="skills-row">
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/icons8-nodejs-48.png" alt="Node.js" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🟢</span>
-              <span>Node JS</span>
-            </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/icons8-python-48.png" alt="Python" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🐍</span>
-              <span>Python</span>
-            </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/icons8-logo-php-40.png" alt="PHP" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🐘</span>
-              <span>PHP</span>
-            </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/java.webp" alt="Java" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">☕</span>
-              <span>Java</span>
-            </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/thymeleaf.png" alt="Thymeleaf" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🍃</span>
-              <span>Thymeleaf</span>
-            </div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node JS</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><span>PHP</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" style="filter:hue-rotate(180deg) saturate(1.5)"><span>React Native</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Thymeleaf"><span>Thymeleaf</span></div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="category-title"><span class="accent">//</span> Database & Hardware</h3>
+          <h3 class="category-title"><span class="accent">//</span> Database &amp; Hardware</h3>
           <div class="skills-row">
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/icons8-logo-mysql-48.png" alt="MySQL" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🗄️</span>
-              <span>MySQL</span>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="phpMyAdmin"><span>phpMyAdmin</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino"><span>Arduino</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FERRAMENTAS ══ -->
+  <section class="section section-dark" id="ferramentas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// ferramentas</span>
+        <h2 class="section-title">Minhas <span class="accent">Ferramentas</span></h2>
+        <p class="section-sub">Usadas diariamente para desenvolver projetos e ministrar aulas de TI</p>
+      </div>
+
+      <div class="tools-categories">
+
+        <div class="tools-group">
+          <h3 class="tools-group-title"><span class="tools-group-icon">💻</span> IDEs &amp; Editores de Código</h3>
+          <div class="tools-row">
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ IDEA"><span>IntelliJ IDEA</span></div>
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse"><span>Eclipse</span></div>
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm"><span>PyCharm</span></div>
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phpstorm/phpstorm-original.svg" alt="PhpStorm"><span>PhpStorm</span></div>
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netbeans/netbeans-original.svg" alt="NetBeans"><span>NetBeans</span></div>
+          </div>
+        </div>
+
+        <div class="tools-group">
+          <h3 class="tools-group-title"><span class="tools-group-icon">🔀</span> Versionamento &amp; Deploy</h3>
+          <div class="tools-row">
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon-invert"><span>GitHub</span></div>
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
+          </div>
+        </div>
+
+        <div class="tools-group">
+          <h3 class="tools-group-title"><span class="tools-group-icon">🧪</span> Testes &amp; Ambiente</h3>
+          <div class="tools-row">
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"><span>Postman</span></div>
+            <div class="tool-item">
+              <div class="tool-text-icon" style="background:linear-gradient(135deg,#fb7a24,#f5a623)">X</div>
+              <span>XAMPP</span>
             </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/phpmyadmin-icon-5578.png" alt="phpMyAdmin" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🛢️</span>
-              <span>phpMyAdmin</span>
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/expo/expo-original.svg" alt="Expo Go" class="icon-invert"><span>Expo Go</span></div>
+          </div>
+        </div>
+
+        <div class="tools-group">
+          <h3 class="tools-group-title"><span class="tools-group-icon">🎨</span> Design &amp; Prototipação</h3>
+          <div class="tools-row">
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
+            <div class="tool-item">
+              <div class="tool-text-icon" style="background:linear-gradient(135deg,#6965db,#4b47b3)">Ex</div>
+              <span>Excalidraw</span>
             </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/cpp.png" alt="C++" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">⚙️</span>
-              <span>C++</span>
+            <div class="tool-item">
+              <div class="tool-text-icon" style="background:linear-gradient(135deg,#ffd02f,#ff8a00)">Mi</div>
+              <span>Miro</span>
             </div>
-            <div class="skill-item">
-              <img src="https://brunoaguiar1986.github.io/portifolio/assets/icons/arduino.png" alt="Arduino" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span class="skill-emoji" style="display:none">🤖</span>
-              <span>Arduino</span>
+          </div>
+        </div>
+
+        <div class="tools-group">
+          <h3 class="tools-group-title"><span class="tools-group-icon">📋</span> Gestão &amp; Agilidade</h3>
+          <div class="tools-row">
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello"><span>Trello</span></div>
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira"><span>Jira</span></div>
+          </div>
+        </div>
+
+        <div class="tools-group">
+          <h3 class="tools-group-title"><span class="tools-group-icon">🌐</span> Plataformas &amp; CMS</h3>
+          <div class="tools-row">
+            <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress"><span>WordPress</span></div>
+            <div class="tool-item">
+              <div class="tool-text-icon" style="background:linear-gradient(135deg,#4285f4,#34a853)">GS</div>
+              <span>Google Sites</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-text-icon" style="background:linear-gradient(135deg,#742774,#a64fa6)">PP</div>
+              <span>Power Platform</span>
             </div>
           </div>
         </div>
@@ -334,34 +428,28 @@
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section class="section section-dark" id="contato">
+  <!-- ══ CONTATO ══ -->
+  <section class="section" id="contato">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">// contato</span>
-        <h2 class="section-title">Entre em  <span class="accent">contato</span></h2>
+        <h2 class="section-title">Entre <span class="accent">em contato</span></h2>
       </div>
       <div class="contato-grid">
         <div class="contato-info">
-          <p class="contato-desc">
-            Estou sempre aberto a novas oportunidades, projetos e colaborações. Fique à vontade para entrar em contato!
-          </p>
+          <p class="contato-desc">Estou sempre aberto a novas oportunidades, projetos e colaborações. Fique à vontade para entrar em contato!</p>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/brunomessiasaguiar/" target="_blank" class="social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-              LinkedIn
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
             </a>
             <a href="https://github.com/brunoaguiar1986" target="_blank" class="social-link" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-              GitHub
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>GitHub
             </a>
             <a href="mailto:brunoaguiar@email.com" class="social-link" aria-label="Email">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              Email
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email
             </a>
             <a href="http://api.whatsapp.com/send?l=pt_BR&phone=5511900001111" target="_blank" class="social-link" aria-label="WhatsApp">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              WhatsApp
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp
             </a>
           </div>
         </div>
@@ -384,7 +472,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ══ FOOTER ══ -->
   <footer class="footer">
     <div class="footer-inner">
       <span class="footer-logo">&lt;BA/&gt;</span>

@@ -1,9 +1,9 @@
 # Portfolio — Bruno Aguiar
 
-Portfólio II pessoal redesenhado com tema dark moderno, animações e responsividade total.
+Portfólio pessoal redesenhado com tema dark moderno, animações e responsividade total.
 
 ## 🚀 Acesse online
-https://brunoaguiar1986.github.io/portfolio/
+https://brunoaguiar1986.github.io/portifolio/
 
 ## ✨ Melhorias implementadas
 
